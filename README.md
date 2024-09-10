@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version : 3.1.0
 
-Things you may want to cover:
+Step:
 
-* Ruby version
+1. git clone
+2. bundle install
+3. set .env
+4. create database based on you .env config
+5. bin/rails db:migrate
+6. bin/rails db:seed
+7. bin/rails server
+8. go to localhost:3000
 
-* System dependencies
 
-* Configuration
+###### For creating new account : 
 
-* Database creation
+bin/rails c
+    
+    `require_relative "script/create_user"`
+    
+    `RegisterUser.new("useruser","password").register`
+    
 
-* Database initialization
+###### List users :
 
-* How to run the test suite
+`username: user1@wallet.com`
 
-* Services (job queues, cache servers, search engines, etc.)
+`password: password`
 
-* Deployment instructions
+==============================
 
-* ...
+`username: user2@wallet.com`
+
+`password: password`
+
+==============================
+
+`username: user3@wallet.com`
+
+`password: password`
+
+###### Postman Collection :
+
+import from  postman/wallet.postman_collection.json
